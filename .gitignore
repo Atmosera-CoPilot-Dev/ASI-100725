@@ -1,0 +1,9 @@
+# Ignore PowerPoint files
+*.ppt
+*.pptx
+*.pps
+*.ppsx
+*.pot
+*.potx
+
+architecture.txt

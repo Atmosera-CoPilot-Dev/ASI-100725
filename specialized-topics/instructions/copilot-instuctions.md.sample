@@ -1,0 +1,48 @@
+---
+copilot:
+  languages:
+    include: [javascript, typescript]
+  notes: These directives apply only when editing JS/TS source files.
+---
+
+# Copilot Code Generation Instructions (JS/TS Only)
+
+> Apply ONLY when the active file language is JavaScript or TypeScript. Ignore these rules for other languages.
+
+## General Guidelines
+- Use camelCase for variables and functions.
+- Use PascalCase for classes.
+- Use single quotes for strings.
+- Provide JSDoc for every function.
+- Indent with 2 spaces.
+- Always implement any TODOs found.
+
+## Specific Instructions
+- Prefer `const` when immutable; otherwise `let`, never `var`.
+- Prefer arrow functions for anonymous functions.
+- Use template literals instead of concatenation.
+- Wrap async logic in try/catch; rethrow or return meaningful errors.
+- Remove unused imports.
+- Ensure loops terminate; refactor deep nesting into smaller functions.
+- Await all promises; no floating promises.
+- Verify dependencies exist in package.json.
+- Flag obvious performance issues (n+1 fetches, unnecessary loops).
+
+## Example
+```javascript
+/**
+ * Fetches user data from the API.
+ * @param {string} userId - The user ID.
+ * @returns {Promise<Object>}
+ */
+const fetchUserData = async (userId) => {
+  try {
+    const response = await fetch(`/api/users/${userId}`);
+    if (!response.ok) throw new Error('Network response was not ok');
+    return await response.json();
+  } catch (err) {
+    console.error('Failed to fetch user data:', err);
+    throw err;
+  }
+};
+```
