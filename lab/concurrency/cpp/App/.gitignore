@@ -1,0 +1,79 @@
+ehthumbs.db
+############################
+# C++ / CMake Project Ignore
+############################
+
+# Build directories
+
+# Ignore build dirs named 'build+anything'
+build*/
+CppTasks/build*/
+
+# Visual Studio generator output (kept minimal since using VSCode)
+.vs/
+
+# VSCode settings (keep workspace settings tracked? Usually we ignore)
+.vscode/
+
+# CMake intermediate files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+compile_commands.json
+Testing/
+CTestTestfile.cmake
+
+# Compiled objects & libs
+*.o
+*.obj
+*.lo
+*.a
+*.lib
+*.la
+*.so
+*.dylib
+*.dll
+*.exp
+*.pdb
+*.ilk
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Crash / logs / profiling
+*.log
+core.*
+vgcore.*
+*.dSYM/
+
+# Temporary / editor
+*.swp
+*.swo
+*~
+*.tmp
+*.cache
+
+# OS-generated
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Old .NET artifacts no longer used
+packages/
+*.nupkg
+*.csproj
+*.sln
+bin/
+obj/
+
+# Tooling
+.idea/
+_ReSharper*/
+*.VC.db
+
+# Test results (if any frameworks output here)
+TestResults/
