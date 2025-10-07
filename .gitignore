@@ -6,4 +6,5 @@
 *.pot
 *.potx
 
-architecture.txt
+# ignore the .vs folder (Visual Studio)
+.vs/
