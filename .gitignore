@@ -8,3 +8,6 @@
 
 # ignore the .vs folder (Visual Studio)
 .vs/
+
+# ignore .vscode folder (Visual Studio Code)
+.vscode/
